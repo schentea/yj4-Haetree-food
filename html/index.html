@@ -1,17 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HAETREE FOOD</title>
-</head>
-<body>
-    <header>
-        <nav></nav>
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body>
+    <header id="mainHeader">
+      <div id="logo">로고</div>
+      <nav id="menu">
+        <input type="checkbox" id="toggle" hidden />
+        <label for="toggle" id="label">
+          <i class="fa-solid fa-bars fa-2x"></i>
+        </label>
+        <div id="closeBtn">
+          <i class="fa-solid fa-x fa-2x"></i>
+        </div>
+        <div id="category">
+          <ul>
+            <li>판매제품</li>
+            <li>브랜드 소개</li>
+            <li>제품 후기</li>
+            <li>구매하기</li>
+          </ul>
+        </div>
+      </nav>
     </header>
-    <section></section>
-    <section></section>
-    <section></section>
-    <section></section>
-</body>
+    <section id="mainBanner">
+      <div>
+        <img src="../image/다운로드 (1).jpg" alt="" />
+        <h2>Banner title</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam,
+          laudantium.
+        </p>
+      </div>
+    </section>
+    <section id="salesPro"></section>
+    <section id="brandDesc"></section>
+    <section id="productRev"></section>
+    <section id="buyBtn"></section>
+    <footer></footer>
+    <script
+      src="https://kit.fontawesome.com/396eace106.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/toggleMenu.js"></script>
+  </body>
 </html>
