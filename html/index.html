@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HAETREE FOOD</title>
-    <link rel="stylesheet" href="../css/index.css" />           
+    <link rel="stylesheet" href="../css/index.css" />
   </head>
   <body>
     <header id="mainHeader">
       <div id="logo">
-        <img src="../image/해트리로고.png" alt="">
+        <img src="../image/해트리로고.png" alt="" />
       </div>
       <nav id="menu">
         <input type="checkbox" id="toggle" hidden />
@@ -30,56 +30,99 @@
       </nav>
     </header>
     <section id="mainBanner">
-      <div id="mainSlider" >
+      <div id="mainSlider">
         <img src="../image/단무지1.jpg" alt="" />
-        <img src="../image/단무지2.jpg" alt="">
-        <img src="../image/단무지3.jpg" alt="">
+        <img src="../image/단무지2.jpg" alt="" />
+        <img src="../image/단무지3.jpg" alt="" />
       </div>
-      <div id="mainTitle">
-       
-      </div>
+      <div id="mainTitle"></div>
       <div id="indicators"></div>
     </section>
     <section id="salesPro">
-      <div id ="salesTitle">
+      <div id="salesTitle">
         <h2>판매 제품</h2>
       </div>
       <div id="salesProDesc">
         <div>
-          <img src="../image/단무지5.jpg" alt="">
+          <img src="../image/단무지5.jpg" alt="" />
           <h2>꼬들 알밥 단무지</h2>
         </div>
         <div>
-          <img src="../image/단무지2-1.jpg" alt="">
+          <img src="../image/단무지2-1.jpg" alt="" />
           <h2>꼬들 단무지</h2>
         </div>
         <div>
-          <img src="../image/단무지3.jpg" alt="">
+          <img src="../image/단무지3.jpg" alt="" />
           <h2>통 단무지</h2>
         </div>
         <div>
-          <img src="../image/단무지6.jpg" alt="">
+          <img src="../image/단무지6.jpg" alt="" />
           <h2>김밥 단무지</h2>
         </div>
-       </div>
+      </div>
+    </section>
+    <section id="salesPro2">
+      <div>
+        <div id="salesTitleBox">
+          <div id="salesProTitle2">
+            <p>판매제품</p>
+          </div>
+          <div id="salesProCategory">
+            <ul>
+              <li onclick="filterProducts('all')">전체</li>
+              <li onclick="filterProducts('danmuji')">단무지</li>
+              <li onclick="filterProducts('ma')">마</li>
+            </ul>
+          </div>
+        </div>
+        <div id="salesProDesc2">
+          <div class="salesProDescImg danmuji">
+            <img src="http://via.placeholder.com/350x250" alt="" />
+            <h2>1</h2>
+          </div>
+          <div class="salesProDescImg danmuji">
+            <img src="http://via.placeholder.com/350x250" alt="" />
+            <h2>2</h2>
+          </div>
+          <div class="salesProDescImg danmuji">
+            <img src="http://via.placeholder.com/350x250" alt="" />
+            <h2>3</h2>
+          </div>
+          <div class="salesProDescImg danmuji">
+            <img src="http://via.placeholder.com/350x250" alt="" />
+            <h2>4</h2>
+          </div>
+          <div class="salesProDescImg ma">
+            <img src="http://via.placeholder.com/350x250" alt="" />
+            <h2>5</h2>
+          </div>
+          <div class="salesProDescImg ma">
+            <img src="http://via.placeholder.com/350x250" alt="" />
+            <h2>6</h2>
+          </div>
+        </div>
+      </div>
     </section>
     <section id="brandDesc">
       <div>
         <div id="brandBack">
-          <img src="../image/brandBack.jpg" alt="">
+          <img src="../image/brandBack.jpg" alt="" />
         </div>
         <div id="brandDescImg">
-          <img src="../image/단무지4.jpg" alt="">
+          <img src="../image/단무지4.jpg" alt="" />
         </div>
-        <div id ="brandTitle">
-          <p>저희 해트리 푸드는 언제나 좋은 품질과 <br />고객님들이 안심하고 드실 수 있는 제품을 <br />만들기 위해 노력하겠습니다.</p>
+        <div id="brandTitle">
+          <p>
+            저희 해트리 푸드는 언제나 좋은 품질과 <br />고객님들이 안심하고 드실
+            수 있는 제품을 <br />만들기 위해 노력하겠습니다.
+          </p>
         </div>
       </div>
     </section>
     <section id="productRev1">
-      <div id="review1" class="review" >
+      <div id="review1" class="review">
         <div id="productRevImg">
-          <img src="../image/단무지6.jpg" alt="">
+          <img src="../image/단무지6.jpg" alt="" />
         </div>
         <div id="productRevDesc">
           <div>
@@ -108,7 +151,9 @@
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
             </p>
-            <p id="reviewText">꼬들 단무지를 워낙 좋아해서 양념넣고 무쳐먹었어요.</p>
+            <p id="reviewText">
+              꼬들 단무지를 워낙 좋아해서 양념넣고 무쳐먹었어요.
+            </p>
           </div>
           <div>
             <p id="icon">
@@ -128,9 +173,9 @@
       </div>
     </section>
     <section id="productRev2">
-      <div id="review1" class="review" >
+      <div id="review1" class="review">
         <div id="productRevImg">
-          <img src="../image/단무지2-1.jpg" alt="">
+          <img src="../image/단무지2-1.jpg" alt="" />
         </div>
         <div id="productRevDesc">
           <div>
@@ -159,7 +204,9 @@
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
             </p>
-            <p id="reviewText">꼬들 단무지를 워낙 좋아해서 양념넣고 무쳐먹었어요.</p>
+            <p id="reviewText">
+              꼬들 단무지를 워낙 좋아해서 양념넣고 무쳐먹었어요.
+            </p>
           </div>
           <div>
             <p id="icon">
@@ -179,15 +226,19 @@
       </div>
     </section>
     <div id="btns">
-      <div id="nextBtn">다음</div>
-      <div id="prevBtn">이전</div>
+      <div id="nextBtn">이전</div>
+      <div id="prevBtn">다음</div>
     </div>
     <section id="buyBtn">
-      <div><a href="https://smartstore.naver.com/saechammart">지금 바로 구매하기 -></a></div>
+      <div>
+        <a href="https://smartstore.naver.com/saechammart"
+          >지금 바로 구매하기 -></a
+        >
+      </div>
     </section>
     <footer>
       <div id="footerImg">
-        <img src="../image/해트리로고.png" alt="">
+        <img src="../image/해트리로고.png" alt="" />
       </div>
       <div id="footerDesc">
         <div>
@@ -205,5 +256,6 @@
     <script src="../js/toggleMenu.js"></script>
     <script src="../js/mainBannerSilder.js"></script>
     <script src="../js/reviewCarousel.js"></script>
+    <script src="../js/salesProCategory.js"></script>
   </body>
 </html>

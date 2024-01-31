@@ -71,9 +71,9 @@ header #menu {
 /* mainBanner */
 #mainBanner {
   width: 100%;
- height: 100%;
- position: relative;
- overflow: hidden;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 #mainBanner #mainSlider {
   display: flex;
@@ -81,7 +81,7 @@ header #menu {
   width: 100%;
   height: 100%;
 }
-#mainBanner  #mainSlider img {
+#mainBanner #mainSlider img {
   width: 100%;
   object-fit: cover;
 }
@@ -94,7 +94,7 @@ header #menu {
   position: absolute;
   bottom: 20px;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   margin-top: 10px;
   display: flex;
 }
@@ -115,15 +115,18 @@ header #menu {
 #salesPro {
   width: 100%;
   height: 100%;
- overflow: hidden;
+  overflow: hidden;
+}
+#salesPro2 {
+  display: none;
 }
 #salesPro #salesTitle {
-  display: flex ;
+  display: flex;
   justify-content: center;
   margin-top: 60px;
   padding: 20px;
-  background-color: #fadb6d;
-  border-radius: 30px 30px 0 0 ;
+
+  border-radius: 30px 30px 0 0;
 }
 #salesPro #salesProDesc {
   display: flex;
@@ -134,7 +137,6 @@ header #menu {
   background-color: #f0f0f0;
   padding-top: 30px;
   padding-bottom: 20px;
-
 }
 #salesPro #salesProDesc div {
   width: 200px;
@@ -173,7 +175,7 @@ header #menu {
 }
 #brandDesc div #brandTitle {
   position: absolute;
-  bottom :-100px;
+  bottom: -100px;
   left: 50%;
   width: 80%;
   transform: translate(-50%, -50%);
@@ -193,7 +195,8 @@ header #menu {
 }
 
 /* productRev */
-#productRev1, #productRev2 {
+#productRev1,
+#productRev2 {
   display: none;
 }
 /* buybutton */
@@ -204,6 +207,15 @@ header #menu {
   display: flex;
   justify-content: center;
 }
+@keyframes floatButton {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
 #buyBtn div {
   padding: 20px;
   width: 50%;
@@ -213,6 +225,7 @@ header #menu {
   font-weight: 600;
   background-color: #ddd;
   transition: background-color 1s ease;
+  animation: floatButton 2s infinite ease-in-out;
 }
 #buyBtn div:hover {
   cursor: pointer;
@@ -228,16 +241,15 @@ footer {
   margin-top: 30px;
   width: 100%;
   height: 100px;
-  font-size : 12px;
+  font-size: 12px;
   justify-content: center;
   align-items: center;
-  
 }
 footer #footerDesc div {
   display: flex;
   flex-direction: row;
 }
-@media screen and (min-width: 744px){
+@media screen and (min-width: 744px) {
   #mainHeader {
     width: 100%;
     height: 100%;
@@ -257,6 +269,10 @@ footer #footerDesc div {
     display: flex;
     justify-content: center;
   }
+  #closeBtn,
+  #label {
+    display: none;
+  }
   #category ul li {
     display: block;
     border-bottom: 0;
@@ -266,9 +282,7 @@ footer #footerDesc div {
   #category ul li:nth-child(3) {
     display: block;
   }
-  #closeBtn,#label {
-    display: none;
-  }
+
   header #menu {
     width: 70%;
   }
@@ -293,15 +307,14 @@ footer #footerDesc div {
     height: 100%;
     object-fit: cover;
   }
-  #brandDesc div #brandDescImg{
+  #brandDesc div #brandDescImg {
     position: absolute;
-    top : 50%;
+    top: 50%;
     left: 10%;
     width: 45%;
     height: 300px;
     border-radius: 20px 0 0 20px;
     overflow: hidden;
-    
   }
   #brandDesc div #brandDescImg img {
     width: 100%;
@@ -324,19 +337,20 @@ footer #footerDesc div {
     font-size: 24px;
     box-shadow: none;
   }
-  
-  #productRev1, #productRev2 {
+
+  #productRev1,
+  #productRev2 {
     margin-top: 350px;
     width: 100%;
     height: 100%;
     display: none;
     position: relative; /* 추가된 부분 */
     overflow: hidden; /* 추가된 부분 */
-    opacity: 0; /* 초기에는 투명도 0으로 설정 */  
-    
+    opacity: 0; /* 초기에는 투명도 0으로 설정 */
   }
 
-  #productRev1.active, #productRev2.active {
+  #productRev1.active,
+  #productRev2.active {
     display: block;
     opacity: 1;
   }
@@ -351,7 +365,6 @@ footer #footerDesc div {
     width: 40%;
     height: 100%;
     margin-right: 30px;
-    
   }
   #productRevImg img {
     width: 100%;
@@ -370,7 +383,8 @@ footer #footerDesc div {
     display: flex;
     justify-content: center;
   }
-  #nextBtn, #prevBtn {
+  #nextBtn,
+  #prevBtn {
     font-weight: 600;
     border-radius: 15px;
     line-height: 2.5;
@@ -380,7 +394,8 @@ footer #footerDesc div {
     height: 40px;
     background-color: #ddd;
   }
-  #nextBtn:hover, #prevBtn:hover {
+  #nextBtn:hover,
+  #prevBtn:hover {
     background-color: #bbb;
     transition-duration: 2s;
     cursor: pointer;
@@ -398,11 +413,73 @@ footer #footerDesc div {
   #star {
     color: #fadb6d;
   }
-  #buyBtn div{
-    
+  #buyBtn div {
     width: 25%;
   }
 }
 @media screen and (min-width: 1280px) {
-  
+  #salesPro {
+    display: none;
+  }
+  #salesPro2 {
+    margin-top: 200px;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  #salesPro2 div {
+    width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #salesPro2 div #salesTitleBox {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    background-color: #eee;
+  }
+  #salesPro2 div #salesTitleBox #salesProTitle2 p {
+    width: 140px;
+    height: 40px;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.5;
+  }
+  #salesPro2 div #salesTitleBox #salesProCategory ul li {
+    text-align: center;
+    list-style: none;
+    display: inline-block;
+    width: 140px;
+    margin: 10px;
+    height: 40px;
+    background-color: #fadb6d;
+    line-height: 2.5;
+    font-weight: 600;
+  }
+  #salesPro2 div #salesTitleBox #salesProCategory ul li:hover {
+    background-color: #fbd54d;
+    cursor: pointer;
+  }
+  #salesPro2 div #salesProDesc2 {
+    background-color: #fadb6d;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #salesPro2 div #salesProDesc2 .salesProDescImg {
+    margin: 15px;
+    width: 30%;
+    height: 25%;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  #salesPro2 div #salesProDesc2 .salesProDescImg img {
+    width: 100%;
+  }
 }
