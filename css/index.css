@@ -54,7 +54,7 @@ header #menu {
   width: 100%;
 }
 #category ul li {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #bbb;
   font-weight: 600;
   height: 100%;
   padding: 20px;
