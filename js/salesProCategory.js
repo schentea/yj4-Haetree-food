@@ -3,7 +3,7 @@ function filterProducts(category) {
   allImages.forEach((image) => {
     if (category === "all" || image.classList.contains(category)) {
       image.style.display = "block";
-      image.style.width = category === "danmuji" ? "40%" : "30%"; // 카테고리에 따라 width 조절
+      image.style.width = category === "danmuji" ? "340px" : "340px"; // 카테고리에 따라 width 조절
       fadeIn(image);
     } else {
       fadeOut(image);

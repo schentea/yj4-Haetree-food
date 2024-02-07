@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   let currentSectionIndex = 0;
-  const sections = document.querySelectorAll("#productRev1, #productRev2");
+  const sections = document.querySelectorAll("#productRev1, #productRev2, #productRev3");
   const totalSections = sections.length;
 
   function showSection(index) {
