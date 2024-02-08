@@ -1,6 +1,16 @@
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
 }
 a {
   color: inherit;
@@ -55,7 +65,7 @@ header #menu {
 }
 #category ul li {
   border-bottom: 2px solid #bbb;
-  font-weight: 600;
+  font-weight: 500;
   height: 100%;
   padding: 20px;
 }
@@ -187,7 +197,7 @@ header #menu {
   transform: translate(-50%, -50%);
   height: 60px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   padding-top: 30px;
   padding-bottom: 40px;
   text-align: center;
@@ -233,7 +243,7 @@ header #menu {
   border-radius: 15px;
   text-align: center;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   background-color: #ddd;
   transition: background-color 1s ease;
   animation: floatButton 2s infinite ease-in-out;
@@ -272,7 +282,7 @@ footer #footerDesc div {
     position: static; /* 기본 static으로 변경 */
   }
   header #logo {
-    width: 30%;
+    width: 60%;
     height: 10%;
   }
   #category {
@@ -283,6 +293,7 @@ footer #footerDesc div {
   }
   #category ul {
     display: flex;
+    align-items: center;
     justify-content: center;
   }
   #closeBtn,
@@ -290,10 +301,11 @@ footer #footerDesc div {
     display: none !important;
   }
   #category ul li {
-    display: block !important;
+    width: 90px;
     border-bottom: 0;
-    margin-left: 50px;
-    font-size: 20px;
+  }
+  #category ul li a {
+    display: block !important;
   }
   #category ul li:nth-child(3) {
     display: block !important;
@@ -302,7 +314,7 @@ footer #footerDesc div {
   header #menu {
     width: 70%;
   }
- 
+
   #salesPro #salesProDesc div {
     width: 40%;
     height: 300px;
@@ -354,12 +366,13 @@ footer #footerDesc div {
     padding-bottom: 0;
     transform: translate(0);
     border-radius: 0 20px 20px 0;
-    font-size: 16px;
+    font-size: 14px;
     box-shadow: none;
   }
 
   #productRev1,
-  #productRev2,#productRev3 {
+  #productRev2,
+  #productRev3 {
     margin-top: 350px;
     width: 100%;
     height: 100%;
@@ -370,7 +383,8 @@ footer #footerDesc div {
   }
 
   #productRev1.active,
-  #productRev2.active,#productRev3.active {
+  #productRev2.active,
+  #productRev3.active {
     display: block;
     opacity: 1;
   }
@@ -405,7 +419,7 @@ footer #footerDesc div {
   }
   #nextBtn,
   #prevBtn {
-    font-weight: 600;
+    font-weight: 500;
     border-radius: 15px;
     line-height: 2.5;
     margin: 10px;
@@ -448,17 +462,14 @@ footer #footerDesc div {
     height: 100%;
   }
   #salesPro2 div {
-    
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
   }
   #salesPro2 div #salesTitleBox {
     width: 61%;
     height: 60px;
-    
   }
   #salesPro2 div #salesTitleBox #salesProCategory {
     width: 100%;
@@ -468,7 +479,6 @@ footer #footerDesc div {
     width: 100%;
     height: 100%;
     display: flex;
-    
   }
   #salesPro2 div #salesTitleBox #salesProCategory ul li {
     text-align: center;
@@ -480,7 +490,7 @@ footer #footerDesc div {
     border-right: 1px solid #bbb;
     line-height: 2.5;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 500;
   }
   #salesPro2 div #salesTitleBox #salesProCategory ul li:nth-child(3) {
     border: 0;
@@ -490,8 +500,7 @@ footer #footerDesc div {
     cursor: pointer;
   }
   #salesPro2 div #salesProDesc2 {
-    
-    width:80%;
+    width: 80%;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -507,7 +516,6 @@ footer #footerDesc div {
     overflow: hidden;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
-    
   }
   #salesPro2 div #salesProDesc2 .salesProDescImg img {
     object-fit: cover;
@@ -518,5 +526,4 @@ footer #footerDesc div {
   #brandDesc div #brandTitle {
     font-size: 24px;
   }
-  
 }
